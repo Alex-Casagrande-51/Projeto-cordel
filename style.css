@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Passion+One&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Passion+One&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One' cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +17,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -16,6 +27,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: (--fonte2);
+    font-size: 3.5vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -33,6 +46,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 5vw;
+}
+section > p{
+    padding-bottom: 2em;
+    text-shadow: 1px 1px 0px black;
 }
 section.normal {
     background-color: white;
@@ -41,10 +60,22 @@ section.normal {
 section.imagem {
     background-color: rgb(61, 61, 61);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    width: 400px;
-    background-color: rgb(42, 41, 41);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb( 0, 0, 0, 0.377);
+}
+section#img1 {
+background-image: url(imagem/background001.jpg);
+background-position: right center ;
+
+}
+section#img2 {
+    background-image: url(imagem/background002.jpg);
 }
 footer {
     background-color: black;
