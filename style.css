@@ -76,6 +76,7 @@ background-position: right center ;
 }
 section#img2 {
     background-image: url(imagem/background002.jpg);
+    background-position: right center;
 }
 footer {
     background-color: black;
